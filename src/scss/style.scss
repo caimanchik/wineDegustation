@@ -1,0 +1,53 @@
+//* import shrifts and parts
+
+@import "parts/nullstyle.scss";
+@import "parts/vars.scss";
+@import 'parts/helpers.scss';
+
+//* main styles
+
+.container{ margin: 0 auto; max-width: $mw;
+	@media(max-width:$md1){max-width: 970px;};
+	@media(max-width:$md2){max-width: 750px;};
+	@media(max-width:$md3){max-width: none; padding: 0px 15px;};
+	position: relative;
+}
+
+html{
+	font-size: $fontsize;
+	@media(max-width:$md1){
+		font-size: $fontsize - 1px;
+	}
+	
+	@media(max-width:$md2){
+		font-size: $fontsize - 2px;
+	}
+	
+	@media(max-width:$md3){
+		font-size: $fontsize - 3px;
+	}
+}
+
+body{
+	font-family: $fontfamily;
+	color: #F1F1F1;
+    background-color: #2d2d2d;
+	&.lock{
+		overflow: hidden;
+	}
+}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+}
+
+@media(max-width:$md3){
+	body.lock{
+		overflow: hidden;
+	}
+}
+
+//* parts of scss
+
+
