@@ -1,0 +1,202 @@
+.harvest {
+    background: #e6e3c4;
+    padding: 5.7rem 0;
+
+    &__body {
+        display: flex;
+        position: relative;
+        padding: 4.29rem 0;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 1px;
+            background-color: #998431;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 1px;
+            background-color: #998431;
+        }
+    }
+    &__column {
+        flex: 0 0 50%;
+
+        &:first-child {
+            padding-right: 7.87rem;
+        }
+        
+        &:last-child {
+            flex-grow: 0;
+        }
+    }
+    &__new {
+        font-size: 1.14rem;
+        color: #000;
+    }
+    &__harvest {
+        margin-top: 2.86rem;
+        font-size: 2.57rem;
+        font-family: $play;
+        color: #282828;
+        margin-bottom: 4.86rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0px;
+            bottom: -2.15rem;
+            width: 160px;
+            height: 1px;
+            background-color: #282828;
+        }
+    }
+    &__date {
+    }
+    &__info {
+        margin-top: 0.9rem;
+    }
+    &__text {
+        font-size: 1rem;
+        color: #282828;
+        line-height: 150%;
+        margin-bottom: 2.15rem;
+    }
+    &__rows {
+        margin-bottom: 2.15rem;
+    }
+    &__button {
+    }
+    &__images {
+    }
+}
+
+.bottle {
+    display: flex;
+    flex-direction: column;
+
+    &__row {
+        display: flex;
+        color: #282828;
+        position: relative;
+
+        &:not(:last-child) {
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                height: 1px;
+                width: 100%;
+                background-color: #000;
+            }
+        }
+    }
+    &__year {
+        padding: 1.76rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 1px;
+            height: 100%;
+            background-color: #000;
+        }
+    }
+    &__info {
+        flex-grow: 1;
+        display: flex;
+        // align-items: center;
+        padding-left: 2.14rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__name {
+        font-size: 1.29rem;
+        font-family: $play;
+    }
+    &__bottle {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+
+.harvest-button {
+    &__btn {
+        padding: 1.3rem 2.14rem;
+        background: $yellow;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1.14rem;
+        letter-spacing: 0.05em;
+        font-weight: 500;
+        transition: all ease .3s;
+        
+        &:hover {
+            background: darken($yellow, 5%);
+        }
+    }
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+    &__row1 {
+        flex: 0 0 66.6666%;
+        padding-left: 1.07rem;
+        width: 100%;
+        padding-bottom: 1.07rem;
+    }
+    &__row2 {
+        flex: 0 0 33.3333%;
+        display: flex;
+        padding-top: 1.07rem;
+        padding-left: 1.07rem;
+    }
+    
+    &__column {
+        flex: 0 0 50%;
+        position: relative;
+        
+        &:first-child {
+            padding-right: 1.07rem;
+        }
+        
+        &:last-child {
+            padding-left: 1.07rem;
+        }
+    }
+    
+    &__image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+        & > img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+        }
+    }
+}

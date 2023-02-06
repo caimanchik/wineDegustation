@@ -262,3 +262,180 @@ body.lock {
   height: 100%;
   object-fit: contain;
 }
+
+.harvest {
+  background: #e6e3c4;
+  padding: 5.7rem 0;
+}
+.harvest__body {
+  display: flex;
+  position: relative;
+  padding: 4.29rem 0;
+}
+.harvest__body::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #998431;
+}
+.harvest__body::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #998431;
+}
+.harvest__column {
+  flex: 0 0 50%;
+}
+.harvest__column:first-child {
+  padding-right: 7.87rem;
+}
+.harvest__column:last-child {
+  flex-grow: 0;
+}
+.harvest__new {
+  font-size: 1.14rem;
+  color: #000;
+}
+.harvest__harvest {
+  margin-top: 2.86rem;
+  font-size: 2.57rem;
+  font-family: "Playfair Display", serif;
+  color: #282828;
+  margin-bottom: 4.86rem;
+  position: relative;
+}
+.harvest__harvest::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -2.15rem;
+  width: 160px;
+  height: 1px;
+  background-color: #282828;
+}
+.harvest__info {
+  margin-top: 0.9rem;
+}
+.harvest__text {
+  font-size: 1rem;
+  color: #282828;
+  line-height: 150%;
+  margin-bottom: 2.15rem;
+}
+.harvest__rows {
+  margin-bottom: 2.15rem;
+}
+.bottle {
+  display: flex;
+  flex-direction: column;
+}
+.bottle__row {
+  display: flex;
+  color: #282828;
+  position: relative;
+}
+.bottle__row:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 1px;
+  width: 100%;
+  background-color: #000;
+}
+.bottle__year {
+  padding: 1.76rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  position: relative;
+}
+.bottle__year::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+}
+.bottle__info {
+  flex-grow: 1;
+  display: flex;
+  padding-left: 2.14rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.bottle__name {
+  font-size: 1.29rem;
+  font-family: "Playfair Display", serif;
+}
+.bottle__bottle {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.harvest-button__btn {
+  padding: 1.3rem 2.14rem;
+  background: #998431;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.14rem;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  transition: all ease 0.3s;
+}
+.harvest-button__btn:hover {
+  background: #86732b;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.images__row1 {
+  flex: 0 0 66.6666%;
+  padding-left: 1.07rem;
+  width: 100%;
+  padding-bottom: 1.07rem;
+}
+.images__row2 {
+  flex: 0 0 33.3333%;
+  display: flex;
+  padding-top: 1.07rem;
+  padding-left: 1.07rem;
+}
+.images__column {
+  flex: 0 0 50%;
+  position: relative;
+}
+.images__column:first-child {
+  padding-right: 1.07rem;
+}
+.images__column:last-child {
+  padding-left: 1.07rem;
+}
+.images__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.images__image > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
