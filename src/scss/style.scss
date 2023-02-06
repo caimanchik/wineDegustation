@@ -1,5 +1,7 @@
 //* import shrifts and parts
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+
 @import "parts/nullstyle.scss";
 @import "parts/vars.scss";
 @import 'parts/helpers.scss';
@@ -10,7 +12,7 @@
 	@media(max-width:$md1){max-width: 970px;};
 	@media(max-width:$md2){max-width: 750px;};
 	@media(max-width:$md3){max-width: none; padding: 0px 15px;};
-	position: relative;
+	// position: relative;
 }
 
 html{
@@ -23,15 +25,14 @@ html{
 		font-size: $fontsize - 2px;
 	}
 	
-	@media(max-width:$md3){
-		font-size: $fontsize - 3px;
-	}
+	// @media(max-width:$md3){
+	// 	font-size: $fontsize - 3px;
+	// }
 }
 
 body{
 	font-family: $fontfamily;
-	color: #F1F1F1;
-    background-color: #2d2d2d;
+	color: #fff;
 	&.lock{
 		overflow: hidden;
 	}
@@ -40,6 +41,7 @@ body{
 .wrapper{
 	overflow: hidden;
 	min-height: 100%;
+	position: relative;
 }
 
 @media(max-width:$md3){
@@ -50,4 +52,6 @@ body{
 
 //* parts of scss
 
-
+@import 'parts/header.scss';
+@import 'parts/start.scss';
+@import 'parts/taste.scss';
