@@ -19,8 +19,8 @@
     }
     
     &__list {
-        position: absolute;
         display: flex;
+        position: absolute;
         bottom: 17%;
         left: 50%;
         transform: translateX(-50%);
@@ -32,8 +32,14 @@
             background-color: $yellow;
             text-transform: uppercase;
             transition: all ease .3s;
+            display: inline-block;
+            white-space: nowrap;
             &:hover {
                 background-color: darken($yellow, 3%);
+            }
+            
+            @media(max-width:$md3){
+                padding: 1rem 1.8rem;
             }
         }
         

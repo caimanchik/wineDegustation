@@ -25,9 +25,9 @@ html{
 		font-size: $fontsize - 2px;
 	}
 	
-	// @media(max-width:$md3){
-	// 	font-size: $fontsize - 3px;
-	// }
+	@media(max-width:$md3){
+		font-size: $fontsize - 3px;
+	}
 }
 
 body{
@@ -56,3 +56,5 @@ body{
 @import 'parts/start.scss';
 @import 'parts/taste.scss';
 @import 'parts/harvest.scss';
+@import 'parts/regist.scss';
+@import 'parts/footer.scss';

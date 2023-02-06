@@ -1,0 +1,225 @@
+.regist {
+    background: #282828;
+    padding: 9.3rem 0;
+    
+    @media(max-width:$md2){
+        padding: 9.3rem 2rem;
+    }
+
+    &__body {
+        position: relative;
+        border: 3px solid #c4c4c4;
+        padding: 7.5rem 0 5.7rem;
+        
+        @media(max-width:530px){
+            border-top: none;
+        }
+        
+        @media(max-width:440px){
+            border: 3px solid #c4c4c4;
+        }
+    }
+
+    &__image-wrap {
+        width: 260px;
+        height: 260px;
+        position: relative;
+        
+        @media(max-width:$md2){
+            width: 150px;
+            height: 150px;
+        }
+        
+        @media(max-width:$md3){
+            width: 100px;
+            height: 100px;
+        }
+
+        & > img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        
+        @media(max-width:440px){
+            display: none;
+        }
+
+        &:first-child {
+            left: 0;
+            transform: translate(-15%, -30%);
+            @media(max-width:$md3){
+                transform: translate(-25%, -30%);
+            }
+        }
+
+        &:nth-child(2) {
+            right: 0;
+            transform: translate(20%, -30%);
+            
+            @media(max-width:$md3){
+                transform: translate(30%, -30%);
+            }
+
+            .regist__image-wrap {
+                height: 200px;
+                
+                @media(max-width:$md2){
+                    height: 114px;
+                }
+                
+                @media(max-width:$md3){
+                    height: 76px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -65%);
+        padding: 0 3.57rem;
+        background: #282828;
+        font-family: $play;
+        font-size: 2.57rem;
+        white-space: nowrap;
+        @media(max-width:$md2){
+            font-size: 2.1rem;
+            padding: 0 3.2rem;
+        }
+        
+        @media(max-width:$md3){
+            font-size: 1.8rem;
+            padding: 0 2.1rem;
+        }
+        
+        @media(max-width:550px) {
+            background-color: transparent;
+        }
+        
+        @media(max-width:440px){
+            background: #282828;
+            padding: 0 1rem;
+        }
+    }
+    &__content {
+        width: 540px;
+        margin: 0 auto;
+        position: relative;
+        
+        @media(max-width:$md2){
+            width: 490px;
+        }
+        
+        @media(max-width:$md3){
+            width: 430px;
+        }
+        
+        @media(max-width:550px){
+            width: 300px;
+        }
+        
+        @media(max-width:$md4){
+            width: 250px;
+        }
+        
+        @media(max-width:440px){
+            width: 200px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -2.86rem;
+            width: 120px;
+            height: 1px;
+            background: #fff;
+        }
+    }
+    &__text {
+        font-size: 1.14rem;
+        line-height: 150%;
+        text-align: center;
+    }
+    &__form {
+        margin-top: 5.71rem;
+    }
+}
+
+.regist-form {
+    display: flex;
+    flex-direction: column;
+
+    &__identity {
+        display: flex;
+    }
+    &__field {
+        flex: 0 0 50%;
+
+        &:first-child {
+            padding-right: 1rem;
+        }
+        &:last-child {
+            padding-left: 1rem;
+        }
+
+        position: relative;
+    }
+
+    &__input {
+        background-color: transparent;
+        width: 100%;
+        color: #fff;
+        line-height: 150%;
+        padding-bottom: 0.6rem;
+
+        border-bottom: 1px solid #fff;
+        transition: all ease 0.3s;
+
+        &:focus {
+            border-color: $yellow;
+        }
+
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+
+    &__address {
+        margin-top: 2.86rem;
+    }
+
+    &__button {
+        margin-top: 3.57rem;
+    }
+}
+
+.regist-form-button {
+    width: 100%;
+    padding: 1.1rem;
+    border: 1px solid #fff;
+
+    font-size: 1.14rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all ease .3s;
+    font-weight: 500;
+    
+    &:hover, &:focus {
+        background-color: darken($yellow, 10%);
+        // color: #282828;
+    }
+}
