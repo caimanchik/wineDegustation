@@ -41,3 +41,7 @@ export function burger() {
         })
     })
 }
+
+export function navigate() {
+    
+}
